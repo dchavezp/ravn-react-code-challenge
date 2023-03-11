@@ -4,6 +4,7 @@ interface StyledContainerProps {
     selected: boolean
 }
 export const StyledContainer = styled.button<StyledContainerProps>`
+    cursor: pointer;
     background: ${({ selected }) => selected ? "linear-gradient(90deg, rgba(186, 37, 37, 0) 0%, rgba(210, 77, 77, 0.1) 100%)" : "transparent"};
     border:0;
     border-right:${({ selected }) => selected ? `4px solid ${theme.colors.primary[4]}` : '0px'};

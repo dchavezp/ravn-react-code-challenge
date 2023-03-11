@@ -2,6 +2,7 @@ import { theme } from "@/theme/theme";
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
+    cursor: pointer;
     display:inline-block;
     transition:all;
     transition-duration:300ms;
