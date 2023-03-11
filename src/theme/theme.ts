@@ -2,51 +2,51 @@ export const theme = {
     typography: {
         display: {
             xL: {
-                size: '64px',
-                lineHeight: '88px',
-                letterSpacing: '1px'
+                'font-size': '64px',
+                'line-height': '88px',
+                'letter-spacing': '1px'
             },
             L: {
-                size: '56px',
-                lineHeight: '72px',
-                letterSpacing: '1px'
+                'font-size': '56px',
+                'line-height': '72px',
+                'letter-spacing': '1px'
             },
             M: {
-                size: '48px',
-                lineHeight: '56px',
-                letterSpacing: '1px'
+                'font-size': '48px',
+                'line-height': '56px',
+                'letter-spacing': '1px'
             },
             S: {
-                size: '32px',
-                lineHeight: '48px',
-                letterSpacing: '1px'
+                'font-size': '32px',
+                'line-height': '48px',
+                'letter-spacing': '1px'
             },
             xS: {
-                size: '24px',
-                lineHeight: '32px',
-                letterSpacing: '1px'
+                'font-size': '24px',
+                'line-height': '32px',
+                'letter-spacing': '1px'
             }
         },
         body: {
             xL: {
-                size: '20px',
-                lineHeight: '32px',
-                letterSpacing: '.75px'
+                'font-size': '20px',
+                'line-height': '32px',
+                'letter-spacing': '0.75px'
             },
             L: {
-                size: '18px',
-                lineHeight: '32px',
-                letterSpacing: '.75px'
+                'font-size': '18px',
+                'line-height': '32px',
+                'letter-spacing': '0.75px'
             },
             M: {
-                size: '15px',
-                lineHeight: '24px',
-                letterSpacing: '.75px'
+                'font-size': '15px',
+                'line-height': '24px',
+                'letter-spacing': '0.75px'
             },
             S: {
-                size: '13px',
-                lineHeight: '22px',
-                letterSpacing: '.25px'
+                'font-size': '13px',
+                'line-height': '22px',
+                'letter-spacing': '0.25px'
             },
         }
     },
@@ -76,6 +76,11 @@ export const theme = {
             '3': '#EBC77F',
             '4': '#E5B454',
         }
-
+    },
+    borderRadius: {
+        lg: '24px',
+        md: '16px',
+        s: '8px',
+        xs: '4px'
     }
 }
