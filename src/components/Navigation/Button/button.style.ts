@@ -2,6 +2,7 @@ import { theme } from "@/theme/theme";
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
+    position: relative;
     cursor: pointer;
     display:inline-block;
     transition:all;
@@ -23,4 +24,4 @@ export const StyledButton = styled.button`
     &:disabled{
         background-color:${theme.colors.primary[2]}
     };
-`
+`;

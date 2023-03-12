@@ -28,6 +28,7 @@
       "@/adapters/*": ["./src/adapters/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "exclude": ["**/*.css"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

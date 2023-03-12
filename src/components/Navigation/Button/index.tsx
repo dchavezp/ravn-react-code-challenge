@@ -1,7 +1,7 @@
+import { ComponentWithChildren } from "@/types";
 import { StyledButton } from "./button.style";
 
-export interface ButtonProps {
-  children?: React.ReactNode;
+export interface ButtonProps extends ComponentWithChildren {
   disabled?: boolean;
 }
 export const Button = ({ children, disabled = false }: ButtonProps) => {

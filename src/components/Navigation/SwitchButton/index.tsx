@@ -1,6 +1,9 @@
 import React from "react";
 import { RiFunctionLine, RiMenuLine } from "react-icons/ri";
-import { StyledButton, StyledSwitchContainer } from "./switch-button.style";
+import {
+  StyledSwitchButton,
+  StyledSwitchContainer,
+} from "./switch-button.style";
 export interface SwitchButtonProps {
   isList?: boolean;
 }
@@ -9,12 +12,12 @@ export const SwitchButton: React.FC<SwitchButtonProps> = ({
 }) => {
   return (
     <StyledSwitchContainer>
-      <StyledButton isList={isList}>
+      <StyledSwitchButton isList={isList}>
         <RiMenuLine size={24} />
-      </StyledButton>
-      <StyledButton isList={!isList}>
+      </StyledSwitchButton>
+      <StyledSwitchButton isList={!isList}>
         <RiFunctionLine size={24} />
-      </StyledButton>
+      </StyledSwitchButton>
     </StyledSwitchContainer>
   );
 };

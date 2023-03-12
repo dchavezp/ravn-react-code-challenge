@@ -1,7 +1,7 @@
 import { theme } from "@/theme/theme";
 import styled from "styled-components";
 
-export const StyledContainer = styled.div`
+export const StyledApplicationSidebar = styled.div`
     max-width:232px;
     height:100%;
     background:${theme.colors.neutral[4]};
@@ -11,4 +11,4 @@ export const StyledContainer = styled.div`
     align-items:center;
     padding-top:12px;
     gap:8px;
-`
+`;

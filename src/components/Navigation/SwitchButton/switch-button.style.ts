@@ -5,12 +5,18 @@ import { SwitchButtonProps } from ".";
 export const StyledSwitchContainer = styled.div`
     display:flex;
     flex-direction:row;
-`
-
-export const StyledButton = styled.button<SwitchButtonProps>`
+`;
+const getColorIsList = ({ isList }: SwitchButtonProps) => {
+    return isList ? `${theme.colors.primary[4]}` : `${theme.colors.neutral[1]}`
+}
+const getBorderColorIsList = ({ isList }: SwitchButtonProps) => {
+    return isList ? `1px solid ${theme.colors.primary[4]}` : "0px"
+}
+export const StyledSwitchButton = styled.button<SwitchButtonProps>`
     cursor: pointer;
     background-color:transparent;
-    color:${({ isList }) => isList ? `${theme.colors.primary[4]}` : `${theme.colors.neutral[1]}`};
-    border:${({ isList }) => isList ? `1px solid ${theme.colors.primary[4]}` : `0px`};
+    height:40px;
+    color:${(props) => getColorIsList(props)};
+    border:${(props) => getBorderColorIsList(props)};
     border-radius:${theme.borderRadius.s};
-`
+`;
