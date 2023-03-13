@@ -19,7 +19,6 @@ export const StyledTag = styled.button<TagProps>`
     flex-direction:row;
     align-items:center;
     height:fit-content;
-    position: relative;
     padding-left:16px;
     padding-right:16px;
     padding-top:4px;
@@ -31,6 +30,7 @@ export const StyledTag = styled.button<TagProps>`
     border:${(props) => getBorderColor(props)};
     ${theme.typography.body.M};
     font-weight:bold;
+    z-index:0;
     &::before{
         content: '';
         position: absolute;

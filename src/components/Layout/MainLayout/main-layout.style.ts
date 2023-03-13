@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from "@/theme/theme";
 export const StyledMainLayout = styled.div`
+    position:relative;
     display:grid;
     grid-template-rows:repeat(1, 1fr);
     grid-template-columns:296px 1fr;

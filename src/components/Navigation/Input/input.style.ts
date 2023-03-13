@@ -6,8 +6,6 @@ export const StyledInput = styled.input<InputProps>`
     background: transparent;
     border:0;
     width:100%;
-    padding-left:24px;
-    padding-right:24px;
     color:${theme.colors.neutral[2]};
     caret-color:${theme.colors.neutral[2]};
     &::placeholder{

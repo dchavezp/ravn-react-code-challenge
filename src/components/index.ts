@@ -10,6 +10,7 @@ export * from "./Navigation/Input";
 export * from "./Navigation/Menu/Dropdown";
 export * from "./Navigation/Menu/DropdownOption";
 export * from "./Navigation/Menu";
+export * from "./Navigation/Modal";
 export * from "./Navigation/SidebarItem";
 export * from "./Navigation/SwitchButton";
 export * from "./Navigation/Tag";

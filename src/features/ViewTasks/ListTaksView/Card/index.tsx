@@ -33,7 +33,7 @@ export const Card: React.FC<Task> = ({
     <StyledCard>
       <StyledCardRow>
         {name}
-        <Menu position="right" options={<CardOptions />}>
+        <Menu position="right" options={<CardOptions />} bottom="-64px">
           <RiMoreFill size={24} />
         </Menu>
       </StyledCardRow>

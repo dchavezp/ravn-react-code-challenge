@@ -7,6 +7,7 @@ export * from "./Input";
 export * from "./Menu/Dropdown";
 export * from "./Menu/DropdownOption";
 export * from "./Menu";
+export * from "./Modal";
 export * from "./SidebarItem";
 export * from "./SwitchButton";
 export * from "./Tag";

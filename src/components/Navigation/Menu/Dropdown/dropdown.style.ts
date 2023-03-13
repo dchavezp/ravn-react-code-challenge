@@ -3,8 +3,8 @@ import { motion } from "framer-motion"
 import styled from "styled-components";
 import { Menuprops } from "..";
 const position = {
-    left: "left:0; bottom:-96px;",
-    right: "right: 0; bottom:-72px;"
+    left: "left:0;",
+    right: "right: 0;"
 }
 export const StyledDropdown = styled(motion.div) <Menuprops>`
     position:absolute;
@@ -20,5 +20,6 @@ export const StyledDropdown = styled(motion.div) <Menuprops>`
     flex-direction:column;
     gap:8px;
     ${(props) => position[props.position]};
+    bottom:${({ bottom }) => bottom};
     background-color:${theme.colors.neutral[3]};
 `
