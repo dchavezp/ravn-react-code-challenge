@@ -1,3 +1,4 @@
+export * from "./Error";
 export * from "./Layout/MainLayout";
 export * from "./Layout";
 export * from "./Navigation/ApplicationSidebar";

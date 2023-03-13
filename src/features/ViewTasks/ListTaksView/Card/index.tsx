@@ -16,10 +16,10 @@ import {
 } from "react-icons/ri";
 import { Avatar, Menu, Tag } from "@/components";
 
-import { Task } from "@/types";
 import { setColorFromEstimatedDate } from "@/utils/setColorFromEstimatedDate";
 import { formatEstimatedDate } from "@/utils/formatEstimatedDate";
 import { CardOptions } from "./card-options";
+import { Task } from "@/model/task";
 export const Card: React.FC<Task> = ({
   id,
   name,
@@ -49,7 +49,7 @@ export const Card: React.FC<Task> = ({
         </Tag>
       </StyledCardRow>
       <StyledTagsRow>
-        {tags.map((tag, index) => {
+        {tags.map((tag: string, index: number) => {
           return (
             <Tag
               key={id + tag}

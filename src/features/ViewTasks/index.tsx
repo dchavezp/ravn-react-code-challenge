@@ -1,15 +1,16 @@
 import { TopBar, TopNavigationBar } from "@/components";
-import React from "react";
+import { useState } from "react";
 import { TaskListView } from "./ListTaksView";
 import { StyledViewTaskContent, StyledViewTask } from "./view-task.style";
 
 export const ViewTask = () => {
+  const [query, setQuery] = useState<string>("");
   return (
     <StyledViewTask>
-      <TopNavigationBar />
+      <TopNavigationBar query={query} setQuery={setQuery} />
       <StyledViewTaskContent>
         <TopBar />
-        <TaskListView />
+        <TaskListView query={query} />
       </StyledViewTaskContent>
     </StyledViewTask>
   );

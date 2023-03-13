@@ -6,14 +6,49 @@ import {
 } from "react-icons/ri";
 import { Avatar } from "../Avatar";
 import { Input } from "../Input";
+import { AnimatePresence, motion } from "framer-motion";
+interface TopNavigationBarProps {
+  query: string;
+  setQuery: React.Dispatch<React.SetStateAction<string>>;
+}
 
-export const TopNavigationBar: React.FC = () => {
+export const TopNavigationBar: React.FC<TopNavigationBarProps> = ({
+  query,
+  setQuery,
+}) => {
   return (
     <StyledTopNavigation>
       <RiSearchLine size={24} />
-      <Input weight="normal" placeholder="Search" />
+      <Input
+        weight="normal"
+        placeholder="Search"
+        value={query}
+        onChange={(e) => {
+          setQuery(e.target.value);
+        }}
+      />
       <StyledActions>
-        <RiCloseCircleLine size={24} />
+        <AnimatePresence>
+          {query !== "" ? (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <RiCloseCircleLine
+                size={24}
+                onClick={() => {
+                  setQuery("");
+                }}
+              />
+            </motion.div>
+          ) : null}
+        </AnimatePresence>
         <RiNotification3Line size={24} />
         <Avatar
           sizeVariant="md"

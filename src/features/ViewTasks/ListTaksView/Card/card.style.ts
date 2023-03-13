@@ -13,6 +13,7 @@ export const StyledCard = styled.div`
     z-index:0;
 `
 export const StyledCardRow = styled.div`
+    width:100%;
     display:flex;
     flex-direction:row;
     height:32px;
