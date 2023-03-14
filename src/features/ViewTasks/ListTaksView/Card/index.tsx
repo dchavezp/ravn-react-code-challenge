@@ -19,7 +19,7 @@ import { Avatar, Menu, Tag } from "@/components";
 import { setColorFromEstimatedDate } from "@/utils/setColorFromEstimatedDate";
 import { formatEstimatedDate } from "@/utils/formatEstimatedDate";
 import { CardOptions } from "./card-options";
-import { Task } from "@/model/task";
+import { PointEstimateValues, Task } from "@/model/task";
 export const Card: React.FC<Task> = ({
   id,
   name,
@@ -38,7 +38,7 @@ export const Card: React.FC<Task> = ({
         </Menu>
       </StyledCardRow>
       <StyledCardRow>
-        {pointEstimate} Points
+        {PointEstimateValues.get(pointEstimate)} Points
         <Tag
           backgroundColor={setColorFromEstimatedDate(
             differenceInDays(new Date(dueDate), new Date(createdAt))

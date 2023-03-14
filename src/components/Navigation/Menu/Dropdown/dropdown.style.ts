@@ -10,7 +10,7 @@ export const StyledDropdown = styled(motion.div) <Menuprops>`
     position:absolute;
     overflow:hidden;
     z-index:4;
-    width:fit-content;
+    max-width:240px;
     border:1px solid ${theme.colors.neutral[2]};
     border-radius:${theme.borderRadius.s};
     overflow:hidden;

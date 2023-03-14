@@ -9,6 +9,7 @@ export const GET_TASKS = gql`
         pointEstimate
         status
         assignee {
+          id
           avatar
           fullName
         }
@@ -16,6 +17,7 @@ export const GET_TASKS = gql`
         name
         createdAt
         creator {
+          id
           avatar
           fullName
         }
@@ -25,5 +27,5 @@ export const GET_TASKS = gql`
   `;
 
 export interface TaskQueryVariables {
-    query: FilterTaskInput;
+  query: FilterTaskInput;
 }

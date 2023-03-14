@@ -1,17 +1,16 @@
+import { User } from "./user";
+
 export interface Task {
   id: string;
   status: string;
-  assignee: { avatar: string; fullName: string };
+  assignee: Partial<User> | null;
   position: number;
   pointEstimate: string;
   dueDate: string;
   name: string;
   createdAt: string;
-  creator: {
-    avatar: string;
-    fullName: string;
-  };
-  tags: string[];
+  creator: Partial<User> | null;
+  tags: TaskTag[];
 }
 
 export interface FilterTaskInput {
@@ -44,3 +43,10 @@ export enum PointEstimate {
   TWO = "TWO",
   ZERO = "ZERO",
 }
+export const PointEstimateValues = new Map<string, number>([
+  [PointEstimate.ZERO, 0],
+  [PointEstimate.ONE, 1],
+  [PointEstimate.TWO, 2],
+  [PointEstimate.FOUR, 4],
+  [PointEstimate.EIGHT, 8],
+]);

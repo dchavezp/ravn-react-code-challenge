@@ -4,10 +4,9 @@ import useToggle from "./useToggle";
 
 function useModal() {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [value, _, setValue] = useToggle(true)
+    const [value, _, setValue] = useToggle(false)
     const suscription = modalService.getSubject();
     const activeModal = (active: boolean) => {
-        console.log(active);
         modalService.setSubject(active)
     }
     useEffect(() => {

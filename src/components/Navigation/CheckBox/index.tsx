@@ -9,7 +9,7 @@ export const CheckBox: React.FC<CheckBoxProps> = ({ label, active }) => {
   return (
     <StyledCheckboxContainer>
       <StyledCheckbox>
-        {active ? (
+        {!active ? (
           <RiCheckboxBlankLine size={24} />
         ) : (
           <RiCheckboxLine size={24} />

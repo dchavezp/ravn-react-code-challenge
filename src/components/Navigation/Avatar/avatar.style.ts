@@ -18,6 +18,7 @@ export const StyledAvatar = styled.img<StyledImageProps>`
 `;
 
 export const StyledAvatarContainer = styled.div`
+    width:fit-content;
     display:flex;
     flex-direction:row;
     align-items:center;

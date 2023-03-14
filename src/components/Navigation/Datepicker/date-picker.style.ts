@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const StyledDatePickerContainer = styled.div`
     width:fit-content;
     color:${theme.colors.neutral[1]};
-    border:1px solid ${theme.colors.neutral[1]};
     border-radius:${theme.borderRadius.xs};
     padding:0;
     & .rdp {
-        --rdp-cell-size: 40px;
+        --rdp-cell-size: 32px;
         --rdp-background-color: ${theme.colors.primary[4]};
     };
 `;

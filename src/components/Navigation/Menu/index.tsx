@@ -3,7 +3,7 @@ import { ComponentWithChildren } from "@/types";
 import React from "react";
 import { Dropdown } from "./Dropdown";
 import { AnimatePresence } from "framer-motion";
-import { StlyedMenuButton } from "./menu.style";
+import { StlyedMenu, StlyedMenuButton } from "./menu.style";
 export interface Menuprops extends ComponentWithChildren {
   options?: React.ReactNode;
   position: "right" | "left";
@@ -19,8 +19,8 @@ export const Menu: React.FC<Menuprops> = ({
 }) => {
   const [value, toggle] = useToggle(false);
   return (
-    <StlyedMenuButton onClick={toggle}>
-      {children}
+    <StlyedMenu>
+      <StlyedMenuButton onClick={toggle}>{children}</StlyedMenuButton>
       <AnimatePresence>
         {value ? (
           <Dropdown position={position} bottom={bottom} color={color}>
@@ -28,6 +28,6 @@ export const Menu: React.FC<Menuprops> = ({
           </Dropdown>
         ) : null}
       </AnimatePresence>
-    </StlyedMenuButton>
+    </StlyedMenu>
   );
 };

@@ -4,7 +4,7 @@ import { DropdownOptionProps } from ".";
 
 export const StyledDropdownOption = styled.button<DropdownOptionProps>`
     cursor: pointer;
-    min-width:122px;
+    min-width:190px;
     display:flex;
     flex-direction:row;
     align-items:center;

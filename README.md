@@ -1,14 +1,15 @@
-
 # Ravn React Code Challenge
+
 A task management app that allows you to browse and add tasks to users
 
-
 ## Author
+
 Dewitt Scott Chavez Ponce
+
 - [@dchavezp](https://github.com/dchavezp)
 
-
 ## Screenshots
+
 Folder Structure
 
 ![Folder Structure Screenshot](https://res.cloudinary.com/dwg8fjcio/image/upload/v1678725729/folder-structure_gsxr99.png)
@@ -24,7 +25,10 @@ Filter Action
 New Task Action
 ![New Task View](https://res.cloudinary.com/dwg8fjcio/image/upload/v1678726653/create_task_modal_zge6tm.gif)
 
-## Usage
+New Task Actions
+![New Task Actions View](https://res.cloudinary.com/dwg8fjcio/image/upload/v1678766961/add-taskpng_g7vppo.png)
+
+## About Project
 
 The project structure is based in group components by features. This makes working with the code easier since all the code for each feature is collocated in the same place making it easy to update and add to.
 
@@ -37,7 +41,7 @@ The project structure is based in group components by features. This makes worki
 - About Date fns: It helps to handle dates
 - About Apollo Client: It helps to handle Graphql Request
 
-Theming was thinking in helps to develop using a theme object to set the css values from the design tokens of Design System: 
+Theming was thinking in helps to develop using a theme object to set the css values from the design tokens of Design System:
 
 ```typescript
 export const theme = {
@@ -83,32 +87,37 @@ export const theme = {
 
 Example of Usage
 
-
 ```typescript
 import { theme } from "@/theme/theme";
 import styled from "styled-components";
 
 export const StyledApplicationSidebar = styled.div`
-    max-width:232px;
-    height:100%;
-    background:${theme.colors.neutral[4]};
-    border-radius:${theme.borderRadius.lg};
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    padding-top:12px;
-    gap:8px;
+  max-width: 232px;
+  height: 100%;
+  background: ${theme.colors.neutral[4]};
+  border-radius: ${theme.borderRadius.lg};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  gap: 8px;
 `;
-
 ```
 
-### References 
+Example for search Task
+
+On Input of Search you must type:
+
+```bash
+  name:"Project1";tags:"android,ios"
+```
+
+To separate filter add parameters you have tu use ';' to separate them
+
+### References
 
 - https://profy.dev/article/react-folder-structure
-- https://www.youtube.com/watch?v=p9PAmqpCWgA
 - https://blog.webdevsimplified.com/2022-07/react-folder-structure/
-
-
 
 ## 🔗 Technologies and Library Links
 
@@ -123,8 +132,6 @@ export const StyledApplicationSidebar = styled.div`
 - [Vite](https://vitejs.dev/)
 - [Vite Tsconfig paths](https://www.npmjs.com/package/vite-tsconfig-paths)
 - [Eslint](https://eslint.org/)
-
-
 
 ## Run Locally
 
@@ -151,4 +158,3 @@ Start the dev server
 ```bash
   yarn run dev
 ```
-

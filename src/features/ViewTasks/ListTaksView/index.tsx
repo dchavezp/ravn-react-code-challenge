@@ -29,7 +29,7 @@ export const TaskListView: React.FC<TaskListViewProps> = ({ query = "" }) => {
       query: filterValueByQuery(query),
     },
   });
-  const totData = tasks?.tasks.length ?? 0;
+  const totalData = tasks?.tasks.length ?? 0;
   if (loading) {
     return (
       <StyledListTask>
@@ -55,7 +55,7 @@ export const TaskListView: React.FC<TaskListViewProps> = ({ query = "" }) => {
   }
   return (
     <StyledListTask>
-      {totData > 0 ? (
+      {totalData > 0 ? (
         groupByKey(tasks?.tasks, "status")?.map((status) => {
           return (
             <TaskColumn

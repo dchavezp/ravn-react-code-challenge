@@ -1,5 +1,10 @@
 import { theme } from "@/theme/theme";
 import styled from "styled-components";
+export const StlyedMenu = styled.span`
+    cursor: pointer;
+    position:relative;
+    width:fit-content;
+`
 export const StlyedMenuButton = styled.span`
     cursor: pointer;
     position:relative;

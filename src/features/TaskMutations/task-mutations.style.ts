@@ -24,4 +24,14 @@ export const StyledTaskMutation = styled.div`
         flex-direction:row-reverse;
         gap:24px
     }
+    & input{
+        width:calc(100% - 32px);
+        padding-top:4px;
+        padding-left:16px;
+        padding-right:16px;
+        padding-bottom:4px;
+        ${theme.typography.body.L};
+        border: 1px solid ${theme.colors.neutral[2]};
+        border-radius:${theme.borderRadius.s}
+    }
 `

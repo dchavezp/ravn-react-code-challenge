@@ -5,7 +5,7 @@ import {
   StyledDatePickerContainer,
   StyledNavigationContainer,
 } from "./date-picker.style";
-
+import "react-day-picker/dist/style.css";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 export const Datepicker = () => {
