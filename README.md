@@ -28,6 +28,9 @@ New Task Action
 New Task Actions
 ![New Task Actions View](https://res.cloudinary.com/dwg8fjcio/image/upload/v1678766961/add-taskpng_g7vppo.png)
 
+Profile
+![New Task Actions View](https://res.cloudinary.com/dwg8fjcio/image/upload/v1678767179/profile_bn9unj.png)
+
 ## About Project
 
 The project structure is based in group components by features. This makes working with the code easier since all the code for each feature is collocated in the same place making it easy to update and add to.
